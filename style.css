@@ -1,0 +1,156 @@
+
+#layout{	 
+width: 1265px; 
+height: 665px; 
+max-width: 1265px; 
+max-height: 665px; 
+background-image: url(images/bg3.png);
+background-position: 0px 0px;
+background-repeat: repeat-x;
+background-size: 900px 700px;
+animation-timing-function: linear; 
+animation-iteration-count: infinite;
+animation-name: movebackground;
+animation-duration: 2s;
+animation-play-state:running;
+}
+
+#gameover{
+width: 100px; 
+height: 100px; 
+max-width: 100px; 
+max-height: 100px;
+position: absolute;
+left:600px ;
+top: 200px;  
+background-image: url(images/gameover.png);
+background-position: 400px 200px;
+background-size: 100px 100px;	
+display:none;
+}
+#sun {
+width:50px;
+height:50px;
+position: absolute;
+top: 30px;
+left: 1000px;
+background-image: url(images/sun.png);
+background-size:50px 50px;
+}
+
+@keyframes movebackground {
+	from { background-position: 100% 0; }
+	to { background-position: 0 0; }
+}
+
+#enemy {
+width:50px;
+height:50px;
+position: absolute;
+background-image: url(images/enemy.png);
+background-size:50px 50px;
+animation-timing-function: linear; 
+animation-iteration-count: infinite;
+animation-name: moveenemy;
+animation-duration: 2s;
+animation-play-state:running;}
+
+@keyframes moveenemy {
+	0%  {top: 10%; left:100%;}
+    25%  {top: 20%; left:70%;}
+    50%  {top: 10%; left:40%;}
+    100% {top: 10%; left:0%;}
+}
+
+#enemy2 {
+width:50px;
+height:50px;
+position: absolute;
+background-image: url(images/enemy.png);
+background-size:50px 50px;
+animation-timing-function: linear; 
+animation-iteration-count: infinite;
+animation-name: moveenemy2;
+animation-duration: 3s;
+animation-play-state:running;
+}
+
+@keyframes moveenemy2 {
+	0%  {top: 40%; left:100%;}
+    20%  {top: 50%; left:80%;}
+	40%  {top: 40%; left:60%;}
+    60%  {top: 50%; left:40%;}
+    80%  {top: 40%; left:20%;}
+	100%{top: 50%; left:0%;}
+}
+
+#enemy3 {
+width:50px;
+height:50px;
+position: absolute;
+background-image: url(images/enemy.png);
+background-size:50px 50px;
+animation-timing-function: linear; 
+animation-iteration-count: infinite;
+animation-name: moveenemy3;
+animation-duration: 4s;
+animation-play-state:running;
+}
+
+@keyframes moveenemy3 {
+	0%  {top: 20%; left:100%;}
+    10%  {top: 30%; left:90%;}
+	20%  {top: 20%; left:80%;}
+	30%  {top: 30%; left:70%;}
+    40%  {top: 20%; left:60%;}
+	50%  {top: 30%; left:50%;}
+    60%  {top: 20%; left:40%;}
+	70%  {top: 30%; left:30%;}
+	80%  {top: 20%; left:20%;}
+	90%  {top: 30%; left:10%;}
+	100%{top: 20%; left:0%;}
+}
+
+#enemy4 {
+width:50px;
+height:50px;
+position: absolute;
+top: 100px; left: 768px;
+background-image: url(images/enemy.png);
+background-size:50px 50px;
+animation-timing-function: linear; 
+animation-iteration-count: infinite;
+animation-name: moveenemy4;
+animation-duration: 5s;
+animation-play-state:running;
+}
+
+@keyframes moveenemy4 {
+	0%  {top: 30%; left:100%;}
+    30%  {top: 60%; left:70%;}
+    60%  {top: 30%; left:40%;}
+    80% {top: 60%; left:20%;}
+	100%{top: 60%; left:0%;}
+}
+
+#enemy5 {
+width:50px;
+height:50px;
+position: absolute;
+background-image: url(images/enemy.png);
+background-size:50px 50px;
+animation-timing-function: linear; 
+animation-iteration-count: infinite;
+animation-name: moveenemy5;
+animation-duration: 3s;
+animation-play-state:running;
+}
+
+@keyframes moveenemy5 {
+	0%  {top: 0%; left:100%;}
+    30%  {top: 10%; left:70%;}
+    60%  {top: 0%; left:40%;}
+    80% {top: 10%; left:20%;}
+	100%{top: 10%; left:0%;}
+}
+
